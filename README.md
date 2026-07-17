@@ -38,12 +38,6 @@ personal-portfolio/
 └── images/
 ```
 
-## 📸 Preview
-
-> Add a screenshot of your portfolio here.
-
-![Portfolio Preview](images/portfolio-preview.png)
-
 ## 🎯 Purpose
 
 This project reflects my learning journey in Frontend Web Development. It helped me improve my skills in responsive design, UI development, and JavaScript while building a real-world portfolio.
@@ -52,7 +46,7 @@ This project reflects my learning journey in Frontend Web Development. It helped
 
 **Vaghela Indrajeetsinh**
 
-- 🎓 B.Tech Computer & Communication Engineering Student
+- 🎓 B.Tech Computer Engineering Student
 - 🌐 Portfolio: https://vaghelaindrajeetsinh2006.github.io/personal-portfolio/
 - 💻 GitHub: https://github.com/vaghelaindrajeetsinh2006
 - 💼 LinkedIn: https://www.linkedin.com/in/vaghela-indrajeetsinh
