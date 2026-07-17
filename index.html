@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaghela Indrajeetsinh | Frontend Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="loading">
+
+  <!-- 1. Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-logo">VI<span>.</span></div>
+    <div class="loader-track">
+      <div class="loader-bar"></div>
+    </div>
+    <div class="loader-text">Compiling Handcrafted Portfolio</div>
+    <div class="loader-percent">0%</div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Ambient Dynamic Backgrounds -->
+  <div class="ambient-bg">
+    <div class="ambient-circle circle-1"></div>
+    <div class="ambient-circle circle-2"></div>
+    <div class="ambient-circle circle-3"></div>
+  </div>
+  <canvas id="mouse-glow-canvas"></canvas>
+
+  <!-- 2. Sticky Navigation Bar -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Go to Home section">VI<span>.</span></a>
+      
+      <div class="nav-links-wrapper">
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li class="nav-item active"><a href="#hero">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#project">Project</a></li>
+            <li class="nav-item"><a href="#education">Education</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Resume Button on Right (Desktop) -->
+        <a href="/assets/resume.pdf" download="Vaghela_Indrajeetsinh_Resume.pdf" class="btn btn-accent" style="margin-left: 20px;" aria-label="Download professional resume PDF">
+          <i class="fa-solid fa-arrow-down-to-line"></i> Resume
+        </a>
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. Hero Section -->
+    <section id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Introduction Left -->
+        <div class="hero-content reveal-element">
+          <span class="hero-greeting">WELCOME TO MY DIGITAL SPACE</span>
+          <h1 class="hero-name">Vaghela Indrajeetsinh</h1>
+          <div class="hero-title-wrapper">
+            <span class="hero-typewriter">Frontend Developer</span>
+          </div>
+          <p class="hero-description">
+            A passionate 3rd year Computer & Communication Engineering student dedicated to crafting premium, highly interactive, and pixel-perfect web interfaces. Focusing on elegant visual aesthetics and solid semantic architectures.
+          </p>
+          <div class="hero-actions">
+            <a href="#project" class="btn btn-primary" aria-label="View featured project JS GameHub">
+              <i class="fa-solid fa-gamepad"></i> View Project
+            </a>
+            <a href="#contact" class="btn btn-secondary" aria-label="Contact Vaghela Indrajeetsinh">
+              <i class="fa-solid fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Profile Photo Right -->
+        <div class="hero-visual reveal-element">
+          <div class="image-container" id="profile-image-box">
+            <img src="/images/profile.jpg" alt="Vaghela Indrajeetsinh" class="profile-photo" referrerPolicy="no-referrer">
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Background Shapes -->
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+
+      <!-- Scroll Down Mouse Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span>SCROLL DOWN</span>
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- 4. About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal-element">
+          <span class="section-tag">01 / WHO I AM</span>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left side visual -->
+          <div class="about-visual reveal-element">
+            <div class="about-image-container">
+              <img src="/images/profile.jpg" alt="Vaghela Indrajeetsinh headshot" class="about-photo" referrerPolicy="no-referrer">
+            </div>
+          </div>
+
+          <!-- Right side textual narrative -->
+          <div class="about-content reveal-element">
+           <p>
+            I am a passionate Frontend Developer and currently pursuing a <strong>of Technology in Computer Engineering (3rd Year) at MBIT, Anand. </strong>  I enjoy creating modern, responsive, and user-friendly web applications while continuously improving my development skills.
+           </p>
+           <p>
+            I have a strong foundation in <strong> HTML5, CSS3, and JavaScript (ES6) and am currently learning React.js to build dynamic and interactive web applications.</strong>  I believe in writing clean, maintainable code and turning ideas into real-world projects that deliver a great user experience.
+           </p>
+
+            <!-- Quick Information Cards -->
+            <div class="about-cards-grid">
+              <div class="premium-card info-card">
+                <div class="info-card-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3>Education</h3>
+                <p>B.Tech in Computer Engineering (3rd Year)</p>
+              </div>
+
+              <div class="premium-card info-card">
+                <div class="info-card-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Current Skills</h3>
+                <p>HTML5 CSS3 JavaScript (ES6) Responsive Web Design  Git & GitHub</p>
+              </div>
+
+              <div class="premium-card info-card">
+                <div class="info-card-icon">
+                  <i class="fa-solid fa-puzzle-piece"></i>
+                </div>
+                <h3>Projects</h3>
+                <p>1 Completed (JS GameHub Chrome App & Web Game Suite)</p>
+              </div>
+
+              <div class="premium-card info-card">
+                <div class="info-card-icon">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3>Currently Learning</h3>
+                <p>React.js development & client state management</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal-element">
+          <span class="section-tag">02 / CORE STACK</span>
+          <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: HTML5 -->
+          <div class="premium-card skill-card reveal-element">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+              <div class="skill-info">
+                <h3>HTML5</h3>
+              </div>
+            </div>
+            <p class="skill-desc">Expert semantic markup, modern layouts, document structures, search optimization, and web accessibility guidelines.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-labels">
+                <span>Core Competency</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-percent="95"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: CSS3 -->
+          <div class="premium-card skill-card reveal-element">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+              <div class="skill-info">
+                <h3>CSS3</h3>
+              </div>
+            </div>
+            <p class="skill-desc">Cascading rules, standard document flows, absolute positioning, Flexbox, CSS Grid layouts, standard media queries, and responsive variables.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-labels">
+                <span>Styling & Animation</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-percent="90"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: JavaScript -->
+          <div class="premium-card skill-card reveal-element">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+              <div class="skill-info">
+                <h3>JavaScript (ES6)</h3>
+              </div>
+            </div>
+            <p class="skill-desc">Modern language structures, lexical scoping, variables, control flow, functions, dynamic modules, and procedural logic algorithms.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-labels">
+                <span>Programming Language</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-percent="85"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: DOM Manipulation -->
+          <div class="premium-card skill-card reveal-element">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="skill-info">
+                <h3>DOM Manipulation</h3>
+              </div>
+            </div>
+            <p class="skill-desc">Dynamic tree traversal, query selectors, runtime element creation, event registration, and real-time attribute mutations.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-labels">
+                <span>Runtime Interaction</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-percent="88"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Responsive Web Design -->
+          <div class="premium-card skill-card reveal-element">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+              <div class="skill-info">
+                <h3>Responsive Design</h3>
+              </div>
+            </div>
+            <p class="skill-desc">Mobile-first layouts, fluid scaling grids, flexible layouts, typography clamping, and media queries matching standard viewport breakpoints.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-labels">
+                <span>Viewport Adaptation</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-percent="92"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Git -->
+          <div class="premium-card skill-card reveal-element">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+              <div class="skill-info">
+                <h3>Git</h3>
+              </div>
+            </div>
+            <p class="skill-desc">Local version tracking, state staging, branching models, feature encapsulation, commit logging, and conflict resolutions.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-labels">
+                <span>Version Control</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-percent="80"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 7: GitHub -->
+          <div class="premium-card skill-card reveal-element">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="skill-info">
+                <h3>GitHub</h3>
+              </div>
+            </div>
+            <p class="skill-desc">Remote repository synchronization, continuous integration, static site deployment, release tracking, and collaboration hubs.</p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-labels">
+                <span>Collaboration Platform</span>
+                <span>83%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-percent="83"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Featured Project Section -->
+    <section id="project" class="section">
+      <div class="container">
+        <div class="section-header reveal-element">
+          <span class="section-tag">03 / HANDCRAFTED PROJECTS</span>
+          <h2>Featured Project</h2>
+        </div>
+
+        <div class="project-wrapper">
+          <div class="premium-card featured-project-card reveal-element">
+            <!-- Project Image Side (Left on Desktop) -->
+            <div class="project-visual-side">
+              <img src="/images/project-preview.jpg" alt="JS GameHub Interface Mockup" class="project-image" referrerPolicy="no-referrer">
+              <div class="project-overlay"></div>
+            </div>
+
+            <!-- Project Content Side (Right on Desktop) -->
+            <div class="project-content-side">
+              <span class="project-tag">Featured Frontend Web Application</span>
+              <h3 class="project-title">JS GameHub</h3>
+              <p class="project-desc">
+                An interactive, client-side gaming hub containing a collection of highly responsive browser games built using pure HTML, CSS, and JavaScript. Demonstrates standard DOM manipulation, structured state triggers, and custom event handlers.
+              </p>
+
+              <ul class="project-features">
+                <li><i class="fa-solid fa-circle-check"></i> Standard event-driven game loops</li>
+                <li><i class="fa-solid fa-circle-check"></i> Clean and responsive UI design layouts</li>
+                <li><i class="fa-solid fa-circle-check"></i> Custom DOM rendering algorithms</li>
+                <li><i class="fa-solid fa-circle-check"></i> Zero external game library dependencies</li>
+              </ul>
+
+              <!-- Technologies Badges -->
+              <div class="tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript (ES6)</span>
+                <span class="tech-badge">DOM Manipulation</span>
+                <span class="tech-badge">Git & GitHub</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <a href="https://vaghelaindrajeetsinh2006.github.io/js-gamehub/" target="_blank" class="btn btn-primary" rel="noopener noreferrer" aria-label="Open live demo of JS GameHub in a new tab">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+                <a href="https://github.com/vaghelaindrajeetsinh2006" target="_blank" class="btn btn-secondary" rel="noopener noreferrer" aria-label="Open GitHub repository of Vaghela Indrajeetsinh in a new tab">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal-element">
+          <span class="section-tag">04 / MY ACADEMICS</span>
+          <h2>Education</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Entry 1 -->
+          <div class="timeline-item reveal-element">
+            <div class="timeline-dot"></div>
+            <div class="premium-card timeline-card">
+              <span class="timeline-year">2024 — Present</span>
+              <h3 class="timeline-role">Bachelor of Technology</h3>
+              <div class="timeline-inst">Computer Engineering</div>
+              <p class="timeline-desc">
+                Currently pursuing B.Tech in Computer Engineering at Madhuben & Bhanubhai Patel Institute of Technology (MBIT), Anand. Skilled in HTML, CSS, and JavaScript, and currently learning React.js. Passionate about building responsive web applications and continuously improving my frontend development skills through real-world projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Currently Learning Section -->
+    <section id="learning" class="section">
+      <div class="container">
+        <div class="section-header reveal-element">
+          <span class="section-tag">05 / FUTURE GROWTH</span>
+          <h2>Currently Learning</h2>
+        </div>
+
+        <div class="learning-wrapper">
+          <div class="premium-card learning-card reveal-element">
+            <!-- Learning Badge -->
+            <span class="learning-badge">Next-Gen Framework</span>
+
+            <div class="learning-header">
+              <div class="learning-icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="learning-info">
+                <h3>React.js</h3>
+                <p>Component-based client state rendering</p>
+              </div>
+            </div>
+
+            <p>
+              To expand my visual coding abilities beyond plain JavaScript, I am actively learning **React.js**. I am masterfully grasping virtual DOM reconciliations, declarative rendering states, functional components, hooks configurations, and advanced client routing mechanisms.
+            </p>
+
+            <!-- Progress Block -->
+            <div class="learning-progress-block">
+              <div class="learning-progress-info">
+                <span class="form-label">Conceptual Mastery</span>
+                <span class="learning-progress-percent">60%</span>
+              </div>
+              <div class="learning-progress-track">
+                <div class="learning-progress-fill" data-percent="60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal-element">
+          <span class="section-tag">06 / GET IN TOUCH</span>
+          <h2>Let's Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Info Column -->
+          <div class="contact-info-side reveal-element">
+            <div class="contact-text">
+              <h3>Say Hello!</h3>
+              <p>
+                Interested in working together or reviewing my web coding abilities? Reach out via LinkedIn, explore my source code repositories on GitHub, or send me a secure message directly using the glassmorphic contact form.
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/vaghela-indrajeetsinh" target="_blank" rel="noopener noreferrer" class="contact-method-card" aria-label="Visit Vaghela Indrajeetsinh's LinkedIn profile in a new tab">
+                <div class="contact-method-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-method-info">
+                  <h4>LinkedIn</h4>
+                  <p>linkedin.com/in/vaghela-indrajeetsinh</p>
+                </div>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/vaghelaindrajeetsinh2006" target="_blank" rel="noopener noreferrer" class="contact-method-card" aria-label="Visit Vaghela Indrajeetsinh's GitHub profile in a new tab">
+                <div class="contact-method-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-method-info">
+                  <h4>GitHub</h4>
+                  <p>github.com/vaghelaindrajeetsinh2006</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Form Column -->
+          <div class="premium-card reveal-element">
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name</label>
+                <input type="text" id="full-name" name="name" class="form-input" placeholder="John Doe" required minlength="3">
+                <span class="invalid-feedback">This field is required.</span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="johndoe@gmail.com" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Collaboration Proposal" required minlength="3">
+                <span class="invalid-feedback">This field is required.</span>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-input" placeholder="Type your message here..." required></textarea>
+                <span class="invalid-feedback">This field is required.</span>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary" aria-label="Send message">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. Footer -->
+  <footer id="footer">
+    <div class="container footer-container">
+      <a href="#hero" class="footer-logo" aria-label="Back to top">VI<span>.</span></a>
+      
+      <ul class="footer-nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/vaghela-indrajeetsinh" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Visit LinkedIn profile in a new tab">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/vaghelaindrajeetsinh2006" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Visit GitHub profile in a new tab">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <p class="footer-copyright">
+        &copy; 2026 Vaghela Indrajeetsinh. Built with vanilla HTML, CSS, and JavaScript. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script type="module" src="/js/script.js"></script>
+</body>
+</html>
