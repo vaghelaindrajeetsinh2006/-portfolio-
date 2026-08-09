@@ -1696,3 +1696,42 @@ textarea.form-input {
     font-size: 2.2rem;
   }
 }
+
+
+/* Expense Tracker Project Visual */
+.project-card-spacing {
+  margin-top: 30px;
+}
+
+.expense-project-visual {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background:
+    radial-gradient(circle at center, rgba(34, 211, 238, 0.18), transparent 45%),
+    linear-gradient(135deg, rgba(3, 7, 18, 0.96), rgba(15, 23, 42, 0.92));
+}
+
+.expense-project-icon {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  color: var(--secondary-accent);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 50px rgba(34, 211, 238, 0.12);
+}
+
+.expense-project-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: var(--text-secondary);
+}
