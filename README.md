@@ -4,7 +4,7 @@ A modern and responsive **Personal Portfolio Website** built using **HTML, CSS, 
 
 ## 🚀 Live Demo
 
-🔗 https://vaghelaindrajeetsinh2006.github.io/personal-portfolio/
+🔗 https://vaghelaindrajeetsinh2006.github.io/-portfolio-/
 
 ## 📌 Features
 
