@@ -143,7 +143,7 @@ function initTypingAnimation() {
   const typingSpan = document.querySelector('.hero-typewriter');
   if (!typingSpan) return;
 
-  const words = ['Frontend Developer', 'JavaScript Developer', 'Responsive Web Developer'];
+  const words = ['Frontend Developer', 'JavaScript Developer', 'Responsive Web Developer','Prompt Engineering','Basic React.js'];
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
